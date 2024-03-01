@@ -1,0 +1,118 @@
+/* custom properties */
+:root {
+    /* colores */
+    --primaryYellow: hsl(47, 88%, 63%);
+    --neutralWhite: hsl(0, 0%, 100%);
+    --neutralGrey: hsl(0, 0%, 50%);
+    --neutralBlack: hsl(0, 0%, 7%);
+
+    /* tipografia */
+    --fuentePrincipal: "Figtree", sans-serif;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    background-color: var(--primaryYellow);
+}
+
+.contenedor-principal {
+    width: 31rem;
+    margin: 15.5rem auto 15.5rem auto;
+    background-color: var(--neutralWhite);
+    border-radius: 2rem;
+    box-shadow: 10px 10px 0px 0px rgba(18,18,18,1);
+}
+
+.sub-contenedor {
+    width: 27rem;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+}
+
+.imagen {
+    height: 20rem;
+    background-image: url("../assets/images/illustration-article.svg"); 
+    background-position: center;
+    border-radius: 1rem;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 2.5rem 0 0 0;
+    padding: .7rem 1.2rem;
+    background-color: var(--primaryYellow);
+    border-radius: .6rem;
+}
+
+.contenedor2 p {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--neutralBlack);
+    margin: 1.2rem 0 0 0;
+}
+
+.contenedor2 a {
+    display: block;
+    text-decoration: none;
+    color: var(--neutralBlack);
+    font-weight: 800;
+    font-size: 2rem;
+    margin-top: 1.6rem;
+}
+
+.contenedor2 .parrafo {
+    color: var(--neutralGrey);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.contenedor2-img-p {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0 0 0;
+}
+
+.contenedor2-img-p img {
+    width: 12%;
+}
+
+.contenedor2-img-p p {
+    font-size: 1.4rem;
+    color: var(--neutralBlack);
+}
+
+/*------------------------------- > 1440px --------------------------*/
+
+@media (min-width: 1440px) { 
+    .contenedor-principal {
+        width: 36.5rem;
+    }
+
+    .sub-contenedor {
+        width: 32.5rem;
+    }
+
+    .contenedor2 a {
+        transition-property: color;
+        transition-duration: .3s;
+    }
+
+    .contenedor2 a:hover {
+        color: var(--primaryYellow);
+    }
+}
+
